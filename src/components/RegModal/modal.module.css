@@ -1,0 +1,39 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    place-content: center;
+    padding-top: 70px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s linear;
+    z-index: 100;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_content{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    width: 30vw;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+.logreg{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
